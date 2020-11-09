@@ -37,6 +37,11 @@ body {
   width: 100vw;
 }
 
+.faq__container__desktop-illustrations,
+.faq__container__desktop-box {
+  display: none;
+}
+
 .faq__container__mobile-illustrations {
   margin-top: -170px;
 }
@@ -141,4 +146,57 @@ body {
 
 .attribution a:hover {
   color: black;
+}
+
+
+@media screen and (min-width: 1020px) {
+  .faq__container__mobile-illustrations {
+    display: none;
+  }
+
+  #faq__container {
+    width: 920px;
+    height: 509px;
+    padding: 0;
+  }
+
+  .faq__text {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 32px 0 0 15px;
+  }
+
+  .faq__text h2 {
+    text-align: left;
+    margin-bottom: 26px;
+  }
+
+  .faq__container__desktop-illustrations {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+  .desktop-illustrations--main-image {
+    margin-left: -84px;
+    margin-top: 68px;
+  }
+
+  .desktop-illustrations--shadow-image {
+    position: absolute;
+    top: -298px;
+    left: -580px;
+  }
+
+  .faq__container__desktop-box {
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    left: -93px;
+    top: -305px;
+  }
 }
